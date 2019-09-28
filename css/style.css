@@ -1,0 +1,130 @@
+html, body { 
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif!important;
+}
+
+p { margin: 0; }
+
+a:hover, a:visited, a:link, a:active { text-decoration: none!important;}
+
+/*****************************admin.html*********************************/
+.header {
+    text-align: center;
+}
+
+#questionsField {
+    margin: auto;
+}
+
+.questionForms {
+    width: 100%;
+    margin: 1.5em auto;
+    padding: 0.7em;
+    background-color: turquoise;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.questionInputs {
+    width: 80%;
+    height: 50px;
+}
+
+.labels {
+    font-size: 1em;
+    font-weight: bold;
+    display: block;
+}
+
+.answers {
+    margin: 1em;   
+}
+
+.answerInputs {
+    width: 70%;
+}
+
+.radios {
+    margin-right: 0.5em;
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: middle;
+}
+
+.buttonsField {
+    text-align: center;
+}
+
+.buttons {
+    width: 18%;
+    margin: 0.5em;
+}
+
+#alertField {
+    text-align: center;
+}
+
+.alerts {
+    color: red;
+    display: none;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.userPageLink, .adminPageLink { /*.adminPageLink is in user.html*/
+    text-align: center;
+    font-size: 1.3em;
+}
+
+/*****************************user.html*********************************/
+#questionsField {
+    text-align: center;
+    min-height: 50px;
+}
+
+.questionField {
+    margin: 1em auto;
+    background: blanchedalmond;
+    border-radius: 15px;
+}
+
+.questionLabels {
+    font-size: 1.4em;
+    font-weight: bold;
+    display: block;
+}
+
+.answerSections {
+    text-align: left;
+    margin: auto;
+}
+
+.answer-radios {
+    margin-right: 0.5em;
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: middle;
+}
+
+.explanations {
+    font-size: 1.4em;
+    color: white;
+    display: inline-block;
+    text-align: center
+}
+
+.explanations span {
+    margin: 0.5em;
+    padding: 0.2em;
+    border-radius: 15px;
+}
+
+#explanation-a {
+    background-color: tomato;
+}
+
+#explanation-b {
+    background-color: dodgerblue;
+}

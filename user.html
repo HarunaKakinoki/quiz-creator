@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COMP 4711 Lab3 Quiz Creator - Student page</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JQuery (CDN) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap (CDN) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <!--Google Font(CDN)-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 header">
+                <h1 id="pageTitle"></h1>      
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 explanations">
+                <span id="explanation-a"></span>
+                <span id="explanation-b"></span>
+            </div>
+        </div>
+           
+        <div class="row">
+            <div class="col-12" id="questionsField">
+                <!--Questions & Answers sections goes here-->
+            </div>
+        </div> 
+        
+        <div class="row">
+            <!--Buttons-->
+            <div class="col-12 buttonsField">
+                <button class="btn btn-primary" id="submitBtn" type="button" onclick="markQuizzes()"></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 adminPageLink">
+                <a href="admin.html" id="adminLink"></a>
+            </div>
+        </div>
+            
+        <!--Modal window for alerting no data on local storage.-->
+        <div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modalInner"></p>
+                        <a href="admin.html" id="modalInnerLink"></a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeBtn"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!--container-fluid end-->
+
+<!--script file-->
+<script src="js/strings2.js"></script>
+<script src="js/script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COMP 4711 Quiz Creator</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JQuery (CDN) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap (CDN) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <!--Google Font(CDN)-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <!--Header-->
+        <div class="row">
+            <div class="col-12 header">
+                <h1 id="pageTitle"></h1>      
+            </div>
+        </div>
+
+        <!--Questions input area-->
+        <div class="row">
+            <div class="col-lg-10 col-md-12" id="questionsField">
+                <!--Question & Answers Input sections goes here-->
+            </div>   
+        </div>
+
+        <!--ADD or DELETE buttons-->
+        <div class="row">
+            <!--Buttons-->
+            <div class="col-12 buttonsField">
+                <button class="btn btn-danger buttons" id="deleteBtn" type="button" onclick="deleteQuestionForm()"></button>
+                <button class="btn btn-warning buttons" id="addBtn" type="button" onclick="createQuestionForm()"></button>
+            </div>
+        </div>
+        
+        <!--Save Button-->
+        <div class="row">
+            <div class="col-12 buttonsField">
+                <button class="btn btn-primary buttons" id="saveBtn" type="button" onclick="storeQuiz()"></button>
+            </div>
+        </div>
+        
+        <!--Validation Alert Field-->
+        <div class="row">
+            <div class="col-12" id="alertField">
+                <p class="alerts" id="questionAlert"></p>
+                <p class="alerts" id="answerAlert"></p>
+                <p class="alerts" id="correctAnswerAlert"></p>
+            </div>
+        </div>
+
+        <!--Link to user page-->
+        <div class="row">
+            <div class="col-12 userPageLink">
+                <a href="user.html" id="userLink"></a>
+            </div>
+        </div>
+
+    </div><!--container-fluid end-->
+
+<script src="js/strings.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
